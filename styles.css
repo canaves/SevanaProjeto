@@ -123,7 +123,6 @@ a {
 .hero-bg {
   position: absolute;
   inset: 0;
-  transform: scaleX(-1);
   background:
     linear-gradient(270deg, rgba(0, 0, 0, 0.92), rgba(245, 130, 31, 0.62)),
     url("assets/images/hero-caminhao-sevana.png") center / cover;
