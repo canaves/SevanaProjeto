@@ -126,7 +126,7 @@ a {
   transform: scaleX(-1);
   background:
     linear-gradient(270deg, rgba(0, 0, 0, 0.92), rgba(245, 130, 31, 0.62)),
-    url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1800&q=80") center / cover;
+    url("assets/images/hero-caminhao-sevana.png") center / cover;
 }
 
 .hero-content {
