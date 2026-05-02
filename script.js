@@ -37,7 +37,7 @@ form.addEventListener("submit", (event) => {
     data.get("mensagem") || "",
   ].join("\n");
 
-  const mailto = new URL("mailto:sevanatransportes@gmail.com");
+  const mailto = new URL("mailto:sevana.transp@gmail.com");
   mailto.searchParams.set("subject", "Solicitação de cotação - Sevana Transportes");
   mailto.searchParams.set("body", body);
 
