@@ -624,6 +624,10 @@ a {
   color: #374151;
 }
 
+.contact-honeypot {
+  display: none;
+}
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -638,6 +642,25 @@ a {
   background: var(--blue);
   color: white;
   font-size: 16px;
+}
+
+.contact-form button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.form-status {
+  min-height: 24px;
+  margin: -6px 0 0;
+  font-weight: 700;
+}
+
+.form-status.is-success {
+  color: #047857;
+}
+
+.form-status.is-error {
+  color: #b91c1c;
 }
 
 .contact-card {

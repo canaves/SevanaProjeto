@@ -281,8 +281,12 @@
         <div class="container contact-grid">
           <div>
             <h2>Solicite uma Cotação Rápida</h2>
-            <p>Preencha o formulário abaixo para gerar um e-mail de cotação para a Sevana Transportes.</p>
-            <form class="contact-form">
+            <p>Preencha o formulário abaixo para enviar sua cotação automaticamente para a Sevana Transportes.</p>
+            <form class="contact-form" action="https://formsubmit.co/sevana.transp@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Solicitação de cotação - Sevana Transportes" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <label class="contact-honeypot" aria-hidden="true">Não preencha este campo<input name="_honey" tabindex="-1" autocomplete="off" /></label>
               <label>Nome Completo *<input required name="nome" /></label>
               <label>E-mail *<input required type="email" name="email" /></label>
               <label>Telefone/WhatsApp *<input required type="tel" name="telefone" /></label>
@@ -290,7 +294,8 @@
               <label>Tipo de Carga<input name="tipo_carga" placeholder="Ex: carga seca, pallets, materiais diversos" /></label>
               <label>Origem e Destino<input name="origem_destino" placeholder="Ex: Ourinhos/SP para São Paulo/SP" /></label>
               <label>Mensagem *<textarea required name="mensagem" rows="4" placeholder="Descreva sua necessidade de transporte..."></textarea></label>
-              <button type="submit">Enviar Cotação por E-mail</button>
+              <button type="submit">Enviar Cotação</button>
+              <p class="form-status" aria-live="polite"></p>
             </form>
           </div>
           <aside class="contact-card">
