@@ -624,10 +624,6 @@ a {
   color: #374151;
 }
 
-.contact-honeypot {
-  display: none;
-}
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
